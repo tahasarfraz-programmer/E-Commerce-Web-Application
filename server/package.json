@@ -1,0 +1,23 @@
+{
+ "name": "atelier-server",
+ "type": "module",
+ "scripts": {
+  "dev": "node --watch --env-file=.env src/server.js",
+  "start": "node --env-file=.env src/server.js",
+  "seed": "node --env-file=.env src/database/seed.js",
+  "test": "node --test test/security.test.js"
+ },
+ "dependencies": {
+  "bcryptjs": "^2.4.3",
+  "cors": "^2.8.5",
+  "express": "^4.19.2",
+  "express-rate-limit": "^7.4.0",
+  "helmet": "^7.1.0",
+  "jsonwebtoken": "^9.0.2",
+  "morgan": "^1.10.0",
+  "mysql2": "^3.11.0",
+  "zod": "^3.23.8",
+  "cookie-parser": "^1.4.6",
+  "nodemailer": "^6.9.14"
+ }
+}

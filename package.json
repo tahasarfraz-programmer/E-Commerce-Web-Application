@@ -1,0 +1,17 @@
+{
+  "name": "atelier",
+  "private": true,
+  "scripts": {
+    "install:all": "npm i --prefix server && npm i --prefix client",
+    "seed": "npm run seed --prefix server",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "screenshots": "node scripts/screenshots.mjs",
+    "screenshots:install": "npm i -D playwright && npx playwright install chromium"
+  },
+  "devDependencies": {
+    "playwright": "^1.47.0"
+  },
+  "license": "MIT"
+}
